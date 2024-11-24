@@ -1,0 +1,98 @@
+.auth-window--wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.buttons--wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.auth-form-close-button {
+    width: 20px;
+    height: 20px;
+    background-color: #ff5f5f;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.auth-input-block--wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.auth-input--wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-input--label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.auth-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.auth-input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.25);
+}
+
+.auth-form-submit--wrapper {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.auth-form-submit-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.auth-form-submit-button:hover {
+    background-color: #0056b3;
+}
+
+.register-button {
+    background-color: #b9babd;
+}
+
+.register-button:hover {
+    background-color: #3ef303;
+}
+
+/* Адаптивность */
+@media (max-width: 480px) {
+    .auth-window--wrapper {
+        padding: 10px;
+    }
+
+    .auth-input {
+        font-size: 14px;
+    }
+
+    .auth-form-submit-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
